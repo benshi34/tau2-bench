@@ -57,7 +57,7 @@ const Leaderboard = () => {
       setLoadError(null)
       
       // Load the manifest file to get list of submissions from new directory structure
-      const manifestResponse = await fetch('/submissions/manifest.json')
+      const manifestResponse = await fetch(`${import.meta.env.BASE_URL}submissions/manifest.json`)
       if (!manifestResponse.ok) {
         throw new Error('Failed to load submissions manifest')
       }
@@ -71,7 +71,7 @@ const Leaderboard = () => {
       // Load each submission from its directory
       for (const submissionDir of submissionDirs) {
         try {
-          const response = await fetch(`/submissions/${submissionDir}/submission.json`)
+          const response = await fetch(`${import.meta.env.BASE_URL}submissions/${submissionDir}/submission.json`)
           if (!response.ok) {
             console.warn(`Failed to load ${submissionDir}: ${response.status}`)
             continue
