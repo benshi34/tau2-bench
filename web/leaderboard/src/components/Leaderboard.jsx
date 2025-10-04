@@ -654,27 +654,27 @@ const Leaderboard = () => {
                      <td className="organization-info">
                        <div className="org-container">
                          <div className="company-logo">
-                           {model.organization === 'Anthropic' && (
-                             <img src="/src/assets/claude.png" alt="Anthropic" className="logo-img" />
-                           )}
-                           {model.organization === 'OpenAI' && (
-                             <img src="/src/assets/openai.svg" alt="OpenAI" className="logo-img" />
-                           )}
-                           {model.organization === 'Sierra' && (
-                             <img src="/src/assets/sierra-logo.png" alt="Sierra" className="logo-img" />
-                           )}
-                           {model.organization === 'Moonshot AI' && (
-                             <span className="emoji-logo">🚀</span>
-                           )}
-                           {model.organization === 'DeepSeek' && (
-                             <img src="/src/assets/DeepSeek_logo_icon.png" alt="DeepSeek" className="logo-img" />
-                           )}
-                           {model.organization === 'Alibaba' && (
-                             <img src="/src/assets/qwen-color.png" alt="Alibaba" className="logo-img" />
-                           )}
-                           {model.organization === 'Google' && (
-                             <img src="/src/assets/Google__G__logo.svg.png" alt="Google" className="logo-img" />
-                           )}
+                          {model.organization === 'Anthropic' && (
+                            <img src="/claude.png" alt="Anthropic" className="logo-img" />
+                          )}
+                          {model.organization === 'OpenAI' && (
+                            <img src="/openai.svg" alt="OpenAI" className="logo-img" />
+                          )}
+                          {model.organization === 'Sierra' && (
+                            <img src="/sierra-logo.png" alt="Sierra" className="logo-img" />
+                          )}
+                          {model.organization === 'Moonshot AI' && (
+                            <span className="emoji-logo">🚀</span>
+                          )}
+                          {model.organization === 'DeepSeek' && (
+                            <img src="/DeepSeek_logo_icon.png" alt="DeepSeek" className="logo-img" />
+                          )}
+                          {model.organization === 'Alibaba' && (
+                            <img src="/qwen-color.png" alt="Alibaba" className="logo-img" />
+                          )}
+                          {model.organization === 'Google' && (
+                            <img src="/Google__G__logo.svg.png" alt="Google" className="logo-img" />
+                          )}
                          </div>
                          <span className="org-name">{model.organization}</span>
                        </div>
