@@ -191,7 +191,7 @@ const TrajectoryVisualizer = () => {
       setError(null)
       
       // Construct the path based on submission directory and file
-      const filePath = `/submissions/${trajectoryInfo.submissionDir}/trajectories/${trajectoryInfo.file}`
+      const filePath = `${import.meta.env.BASE_URL}submissions/${trajectoryInfo.submissionDir}/trajectories/${trajectoryInfo.file}`
       
       // Fetch the JSON file from the submissions directory
       const response = await fetch(filePath)
